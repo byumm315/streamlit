@@ -10,3 +10,4 @@ new_df = st.data_editor(df,
                         column_config={
                             "date":st.column_config.DateColumn('Date')
                         })
+#테이블 안에 그래프, 체크박스, 이미지 등을 넣을 수 있도록 돕는 기능
