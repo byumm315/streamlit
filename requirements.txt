@@ -1,0 +1,10 @@
+streamlit
+plotly
+pandas
+numpy
+matplotlib.pyplot
+matplotlib
+font_manager
+rc
+rcParams
+seaborn
