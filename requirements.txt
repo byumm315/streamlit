@@ -3,7 +3,3 @@ plotly
 pandas
 numpy
 matplotlib
-font_manager
-rc
-rcParams
-seaborn
