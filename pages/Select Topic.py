@@ -14,6 +14,6 @@ var1 = st.selectbox(label = "Choose a Topic", options = v_list,key=0)
 title = f"Slect topic: {var1}"
 
 st.dataframe(data[data['topic']==var1])
-y_values=data[data['topic']==var1]['title'].value_counts().to_frame()
-fig = px.bar(y_values, x = index, y = 'title', title=title)
+y_values=data[data['topic']==var1]['title'].value_counts().to_frame().reset_index(drop=False)
+fig = px.bar(y_values, x = 'index', y = 'title', title=title)
 st.plotly_chart(fig)
