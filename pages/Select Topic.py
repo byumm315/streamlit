@@ -15,5 +15,6 @@ title = f"Slect topic: {var1}"
 
 st.dataframe(data[data['topic']==var1])
 y_values=data[data['topic']==var1]['title'].value_counts().to_frame().reset_index(drop=False)
+st.dataframe(y_values)
 fig = px.bar(y_values, x = 'index', y = 'title', title=title)
 st.plotly_chart(fig)
