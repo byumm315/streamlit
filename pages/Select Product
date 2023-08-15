@@ -11,7 +11,7 @@ st.subheader('Check the reviews by selecting a product')
   
 v_list=list(data['title'].unique())
 var1 = st.selectbox(label = "Choose a Product", options = v_list,key=0)
-title = f"Slect topic: {var1}"
+title = f"Slect Topic: {var1}"
 
 st.dataframe(data[data['title']==var1])
 y_values=data[data['title']==var1]['topic'].value_counts().to_frame().reset_index(drop=False)
