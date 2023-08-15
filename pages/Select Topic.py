@@ -13,4 +13,4 @@ v_list=list(data['topic'].unique())
 var1 = st.selectbox(label = "Choose a Topic", options = v_list,key=0)
 title = f"Slect topic: {var1}"
 
-st.DataFrame(data[data['topic']==var1])
+st.dataframe(data[data['topic']==var1])
