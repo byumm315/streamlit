@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import numpy as np
 
-data=pd.read_csv('ottugi_review_total_1.csv')
+data=pd.read_csv('ottugi_review_topic_1.csv')
 
 st.subheader('Check the reviews by selecting a topic')
   
